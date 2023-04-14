@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0"
+  xmlns="http://javafx.com/javafx/19"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.LayoutController">
+  <top>
+    <StackPane style="-fx-background-color: white;">
+      <HBox alignment="CENTER_LEFT" prefHeight="50" style="-fx-background-color: white; -fx-padding: 0 10;" styleClass="shadow" stylesheets="@styles.css" StackPane.alignment="CENTER_LEFT">
+        <Label prefHeight="55.0" prefWidth="230.0" style="-fx-padding: 10 0;" styleClass="sm-title" stylesheets="@styles.css" text="ViennaInventory" />
+        <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+          <children>
+            <Button fx:id="dashboardBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" stylesheets="@styles.css" text="Dashboard">
+              <styleClass>
+                <String fx:value="nav-button" />
+                <String fx:value="left-and-right-border" />
+              </styleClass>
+            </Button>
+            <Button fx:id="inventoryBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" stylesheets="@styles.css" text="Inventory">
+              <styleClass>
+                <String fx:value="nav-button" />
+                <String fx:value="left-and-right-border" />
+              </styleClass>
+            </Button>
+            <Button fx:id="vendorsBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" stylesheets="@styles.css" text="Vendors">
+              <styleClass>
+                <String fx:value="nav-button" />
+                <String fx:value="left-and-right-border" />
+              </styleClass>
+            </Button>
+            <Button fx:id="issuedGoodsBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" stylesheets="@styles.css" text="Issued Goods">
+              <styleClass>
+                <String fx:value="nav-button" />
+                <String fx:value="left-and-right-border" />
+              </styleClass>
+            </Button>
+            <Button fx:id="billsBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" stylesheets="@styles.css" text="Bills">
+              <styleClass>
+                <String fx:value="nav-button" />
+                <String fx:value="left-and-right-border" />
+              </styleClass>
+            </Button>
+          </children>
+        </HBox>
+      </HBox>
+    </StackPane>
+  </top>
+</BorderPane>
